@@ -6,7 +6,6 @@ This project is a simple image carousel (slideshow) created from scratch as part
 
 This was one of the first projects I worked on, and it laid the foundation for understanding layout, styling, and interactivity in web development.
 
----
 
 ## Features
 
@@ -17,7 +16,6 @@ This was one of the first projects I worked on, and it laid the foundation for u
 - **Hover Effects:** Interactive hover effects on navigation buttons and dots.
 - **Mobile-First:** Adjustments to font size and layout for mobile devices.
 
----
 
 ## Installation
 
@@ -25,7 +23,6 @@ This was one of the first projects I worked on, and it laid the foundation for u
    ```bash
    git clone https://github.com/your-username/image-carousel.git
 
----
 
 ## How It Works
 
@@ -33,12 +30,10 @@ This was one of the first projects I worked on, and it laid the foundation for u
 - The CSS file handles the styling and animations, including the fade effect, button positioning, and responsiveness.
 - JavaScript (in script.js) is responsible for the dynamic functionality, such as switching between images and updating the active dot.
 
----
 
 ## Project Status
 This project is complete as a proof of concept and demonstrates fundamental web development skills. However, it is one of my earliest projects, and with more experience, several improvements could be made.
 
----
 
 ## Improvements (As a 3rd Year Student)
 As a 3rd-year student now, I've gained more experience in web development, and there are a few improvements that could be implemented in this project:
