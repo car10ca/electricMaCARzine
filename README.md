@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project is a simple image carousel (slideshow) created from scratch as part of my early web development journey. It showcases the ability to work with HTML, CSS, and basic JavaScript for dynamic content display and interaction. The carousel includes features like smooth transitions, next/previous navigation, and clickable dots to indicate and navigate through slides. 
+This project was developed as a final project for the web development module during my BA in Computer Science. The goal was to produce an electronic magazine website on any given topic, and I chose to focus on **electric cars**. The project showcases my understanding of **JavaScript**, **HTML**, and **CSS**, while emphasizing **interactivity**, **responsiveness**, and **clean code**. It includes features like a navigation menu, image carousel, newsletter signup, dynamic content display, and more. This project scored 89% at a UK university where 70% and up is considered an A. 
 
-This was one of the first projects I worked on, and it laid the foundation for understanding layout, styling, and interactivity in web development.
+This was one of my earliest projects from 2021, and now, as a 3rd-year student, I have a much deeper understanding of web development. I now have more advanced skills and knowledge that could improve the code and add new features. 
 
 
 ## Features
