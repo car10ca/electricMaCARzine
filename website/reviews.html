@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- language setting -->
+<html lang="en" class="reviews">
+
+
+<head>
+  <!-- creating a favicon via the profile method as per w3c -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+  <!-- Link to external stylesheets: main & image caroussel -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/image-carousel.css">
+
+  <!-- Preconnect to google fonts to make sure it loads in time -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome: Vector icons and social logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Begin: meta data -  specify character set, page description, keywords, author of the document, and viewport (scaling) settings -->
+  <meta charset="utf-8" />
+  <meta name="description" content="Homepage for Electric macarzine - the magazine for all electric car enthusiasts">
+  <meta name="keywords" content="electric, car, enthusiast">
+  <meta name="author" content="Kerstin Kegel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Load script asyncronously -->
+  <script src="scripts/mobileNav.js" async></script>
+  <script src="scripts/newsletter.js" async></script>
+
+  <!-- Page title in browser tab -->
+  <title>ELECTRIC maCARzine | Reviews</title>
+</head>
+
+
+
+<body class="reviews">
+
+  <!-- BEGIN: HEADER SECTION -->
+  <header class="header">
+
+    <!-- Logo -->
+    <a href="index.html"><img src="images/electric-macarzine-logo.svg" class="logo" alt="Logo: ELECTRIC maCARzine"></a>
+
+    <!-- Begin: social icons in header -->
+    <div class="social">
+      <a href="http://www.facebook.com" target="_blank">
+        <img src="images/social/iconFacebook.png" class="social" alt="Facebook Icon"></a>
+      <a href="http://www.twitter.com" target="_blank">
+        <img src="images/social/iconTwitter.png" class="social" alt="Twitter Icon"></a>
+      <a href="http://www.youtube.com" target="_blank">
+        <img src="images/social/iconYouTube.png" class="social" alt="YouTube Icon"></a>
+      <a href="http://www.instagram.com" target="_blank">
+        <img src="images/social/iconInstagram.png" class="social" alt="Instagram Icon"></a>
+    </div>
+    <!-- End: social icons in header -->
+
+  </header>
+  <!-- END: HEADER SECTION -->
+
+
+
+
+
+  <!-- BEGIN: NAVIGATION -->
+  <nav class="topnav" id="responsiveTopnav">
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="reviews.html" class="active">Reviews</a>
+    <a href="gallery.html">Gallery</a>
+    <!-- Link to js script: If mobile, trigger hamburger menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="mobileNav()"><i class="fa fa-bars"></i></a>
+  </nav>
+  <!-- END: NAVIGATION -->
+
+
+
+
+  <div class="reviews-bg">
+    <div class="topleft">
+      <!--p style="font-style: italic; font-size: 13px;">Lamborghini Terzo Millennio: The future of electric cars</p-->
+    </div>
+    <div class="middle">
+      <h2>COMING SOON</h2>
+      <p style="font-size: 17px">We're working hard to bring you exclusive and never before seen reviews for members
+        only.</p>
+
+      <p style="font-size: 17px">Subscribe to our newsletter for your chance to WIN 1 of 10 FREE 1-year memberships.
+      </p>
+
+      <button class="newsletter-button" onclick="newsletterSignUp()"><span>Subscribe now</span></button>
+
+      <!-- Begin: PopUp Newsletter Sign Up Form -->
+      <div class="form-popup" id="newsletterForm">
+        <form action="/subscribe-thanks.html" class="form-container">
+          <h3>Sign-up</h3>
+
+          <label for="email"><b>Email</b></label>
+          <input id="email" class="hide">
+          <input type="text" placeholder="insert your email" name="email" required>
+
+          <label for="name"><b>Name</b></label>
+          <input id="name" class="hide">
+          <input type="text" placeholder="insert your name" name="name" required>
+
+          <button type="submit" class="btnSubscribe">Subscribe now &raquo;</button>
+          <button type="button" class="btnCancel" onclick="cancelNewsletterSignUp()">Cancel</button>
+        </form>
+      </div>
+      <!-- End: PopUp Newsletter Sign Up Form -->
+
+
+    </div>
+  </div>
+
+
+  <!-- BEGIN: FOOTER -->
+  <footer class="footer">
+    <div class="row">
+      <div class="column">
+        <a href="index.html">
+          <img src="images/footer_logo.svg" class="footer-logo" alt="Logo" style="padding-left: 20px;">
+        </a>
+      </div>
+
+      <div class="column">
+        <p style="padding-left: 20px;">Copyright 2021</p>
+      </div>
+
+      <div class="column">
+        <a href="http://www.facebook.com" target="_blank">
+          <img src="images/social/footer_iconFacebook.png" class="footer-img" alt="Facebook Icon"
+            style="padding-left: 20px;"></a>
+        <a href="http://www.twitter.com" target="_blank">
+          <img src="images/social/footer_iconTwitter.png" class="footer-img" alt="Twitter Icon"></a>
+        <a href="http://www.youtube.com" target="_blank">
+          <img src="images/social/footer_iconYouTube.png" class="footer-img" alt="YouTube Icon"></a>
+        <a href="http://www.instagram.com" target="_blank">
+          <img src="images/social/footer_iconInstagram.png" class="footer-img" alt="Instagram Icon"></a>
+      </div>
+
+
+    </div>
+  </footer>
+  <!-- END: FOOTER -->
+
+
+
+
+</body>
+
+</html>

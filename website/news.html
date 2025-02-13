@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- language setting -->
+<html lang="en">
+
+
+<head>
+  <!-- creating a favicon via the profile method as per w3c -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  
+  <!-- Link to external stylesheets: main & image caroussel -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/image-carousel.css">
+
+  <!-- Preconnect to google fonts to make sure it loads in time -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome: Vector icons and social logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Begin: meta data -  specify character set, page description, keywords, author of the document, and viewport (scaling) settings -->
+  <meta charset="utf-8" />
+  <meta name="description" content="Homepage for Electric macarzine - the magazine for all electric car enthusiasts">
+  <meta name="keywords" content="electric, car, enthusiast">
+  <meta name="author" content="Kerstin Kegel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Load scripts asyncronously-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/mobileNav.js" async></script>
+  <script src="scripts/newsFilter.js" async></script>
+  <script src="scripts/articleArchive.js" async></script>
+ 
+
+  <!-- Page title in browser tab -->
+  <title>ELECTRIC maCARzine | News Archive</title>
+</head>
+
+
+<body>
+
+<!-- BEGIN: HEADER SECTION -->
+<header class="header">
+
+  <!-- Logo -->
+  <a href="index.html"><img src="images/electric-macarzine-logo.svg" class="logo" alt="Logo: ELECTRIC maCARzine"></a>
+    
+  <!-- Begin: social icons in header -->
+    <div class="social">
+      <a href="http://www.facebook.com" target="_blank">
+        <img src="images/social/iconFacebook.png" class="social" alt="Facebook Icon"></a>
+      <a href="http://www.twitter.com" target="_blank">
+        <img src="images/social/iconTwitter.png" class="social" alt="Twitter Icon"></a>
+      <a href="http://www.youtube.com" target="_blank">
+        <img src="images/social/iconYouTube.png" class="social" alt="YouTube Icon"></a>
+      <a href="http://www.instagram.com" target="_blank">
+        <img src="images/social/iconInstagram.png" class="social" alt="Instagram Icon"></a>
+    </div>
+  <!-- End: social icons in header -->
+
+</header>
+ <!-- END: HEADER SECTION -->
+
+
+<!-- BEGIN: NAVIGATION -->
+<nav class="topnav" id="responsiveTopnav">
+    <a href="index.html">Home</a>
+    <a href="news.html" class="active">News</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="gallery.html">Gallery</a>
+    <!-- Link to js script: If mobile, trigger hamburger menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="mobileNav()"><i class="fa fa-bars"></i></a>
+</nav>
+<!-- END: NAVIGATION -->
+
+  
+<h1>News Archive</h1>
+<p>Please select the car manufacturer of your interest to see the relevant news snippets which will lead you to the external page where you can read the entire article.</p>
+
+
+
+<!-- drop down menu for filtering news articles -->
+<select class="div-toggle" data-target=".news-archive">
+    <option value="choose">select...</option>
+    <option value="audi" data-show=".audi">Audi</option>
+    <option value="bmw" data-show=".bmw">BMW</option>
+    <option value="honda" data-show=".kia">Kia</option>
+    <option value="nissan" data-show=".tesla">Tesla</option>
+    <option value="generic" data-show=".generic">Generic</option>
+    <option value="allnews" data-show=".allnews">Browse all</option>
+  </select>
+
+
+
+<!-- Generic -->
+  <div class="news-container generic allnews hide">
+    <div class="news-layout">
+      <div class="newscard-image">
+        <img src="images/news-archive/charging-electric-car.jpeg" alt="An electric car being charged">
+        <div class="newscard">
+          <h4><a href="https://www.edmunds.com/fuel-economy/the-true-cost-of-powering-an-electric-car.html" target="_blank">The True Cost of Powering an Electric Car</a></h4>
+            <p>What if a gallon of gasoline cost $3 at breakfast time, was free at lunch, bumped up to $8 in the afternoon,
+            but was only $2 in the middle of the night? Welcome to the world of charging up plug-in electric vehicles. If you 
+            buy an electric car, the cost of a fill-up will largely depend on when and where you charge it and what rates your utility 
+            company offers. For the bigger picture of what it costs to charge a plug-in car, you should include the amortized cost of buying and 
+            installing a home charging station.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audi -->
+  <div class="news-container audi allnews hide">
+    <div class="news-layout">
+      <div class="newscard-image">
+        <img src="images/news-archive/AudiQ4etron.jpg" alt="Back view of the Audi Q4 etron">
+        <div class="newscard">
+          <h4><a href="https://www.automotiveworld.com/news-releases/start-of-production-for-audi-q4-e-tron/" target="_blank">Start of production for Audi Q4 e-tron</a></h4>
+            <p>Audi goes &quot;back to its roots&quot;: In Zwickau in Saxony, the birthplace of this long-standing German company, production of 
+              the Audi Q4 e-tron has finally started. The fully electric compact model is the first electric SUV to be produced by 
+              Audi in Germany. The Q4 e-tron features a Volkswagen-made modular electric drive matrix (MEB), a highly versatile and 
+              variable platform that is suitable for numerous fully electric models and offers considerable scope for leveraging synergies.
+
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- BMW -->
+  <div class="news-container bmw allnews hide">
+    <div class="news-layout">
+      <div class="newscard-image">
+        <img src="images/news-archive/the_first_bmw_ix_1.jpg" alt="A red BMW ix in motion">
+        <div class="newscard">
+          <h4><a href="https://www.thecarconnection.com/news/1131659_bmw-ix-suv-leads-next-generation-of-brand-s-electric-vehicles" target="_blank">BMW iX SUV leads next generation of brand's electric vehicles</a></h4>
+            <p>The BMW iX electric crossover SUV promises to balance performance and efficiency when it arrives in the U.S. in early 2022. Orders for 
+              the EV that BMW announced last week open in June. The BMW iX will spearhead the next generation of BMW's electric-vehicle 
+              lineup, evolving beyond the quirky i3 city car and the futuristic i8 near-supercar. BMW said that battery-electric vehicles such as the 
+              iX will make up more than half of its plan to sell 25 electrified vehicles (including plug-in hybrids and mild hybrids) globally by 2023. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="news-container bmw allnews hide">
+    <div class="news-layout">
+      <div class="newscard-image">
+        <img src="images/news-archive/bmw-factory.jpg" alt="A BMW electric car built in a factory">
+        <div class="newscard">
+          <h4><a href="https://arstechnica.com/cars/2021/03/bmws-big-electric-car-push-selling-2-million-new-evs-by-2025/" target="_blank">BMW's big electric car push: Selling 2 million new EVs by 2025</a></h4>
+            <p>With annual report season in full swing, it was BMW's turn on Wednesday to take the microphone and tell us about its electric vehicle plans 
+              for the next few years. The German automaker was an early leader in terms of electrification, producing innovative cars under the &quot;i&quot; subbrand 
+              and selling a lot of plug-in hybrids to boot. But it fell behind rivals in the development of longer-range battery EVs, which is one reason why 
+              then-CEO Harald Kr&uuml;ger stepped down in 2019 just weeks after announcing plans to amp up the electrification effort. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- KIA-->
+  <div class="news-container kia allnews hide">
+    <div class="news-layout">
+      <div class="newscard-image">
+        <img src="images/news-archive/kia-EV6.jpg" alt="A white 2022 Kia EV6">
+        <div class="newscard">
+          <h4><a href="https://www.caranddriver.com/news/a35824489/2022-kia-ev6-design-specs/" target="_blank">2022 Kia EV6 Boasts a Bold, Sleek Design</a></h4>
+            <p>Kia is in the middle of a design transformation, and the first vehicle to emerge from its fresh &quot;Opposites United&quot; philosophy is the EV6, which is also 
+              the automaker’s first dedicated EV. Based on the Hyundai Motor Group’s Electric-Global Modular Platform (E-GMP), the electric compact SUV will get a more 
+              thorough unveiling event with more details about the vehicle's specs later in March.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Tesla -->
+  <div class="news-container tesla allnews hide">
+    <div class="news-layout">
+      <div class="newscard-image">
+        <img src="images/news-archive/TeslaCybertruck.jpeg" alt="Tesla's Cybertruck in motion">
+        <div class="newscard">
+          <h4><a href="https://www.caranddriver.com/news/a35824489/2022-kia-ev6-design-specs/" target="_blank">Elon Musk says the new Cybertruck design won't have any door handles</a></h4>
+            <p>Elon Musk hinted on Twitter that the Tesla Cybertruck will not have any door handles, which would be one of the most 
+              concrete design changes to the electric truck aside from the slight reduction of the vehicle's overall measurements. The 
+              original prototype of the Cybertruck had the same door handles as other Tesla models. Handles on Tesla's cars are already 
+              unique, as they remain flat against the car until the car key comes close to the vehicle, or if an individual pushes 
+              against a corner of the door handle when the car is already unlocked.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN: FOOTER -->
+<footer class="footer">
+    <div class="row">
+      <div class="column">
+        <a href="index.html">
+          <img src="images/footer_logo.svg" class="footer-logo" alt="Logo" style="padding-left: 20px;">
+        </a>
+      </div>
+  
+      <div class="column">
+        <p style="padding-left: 20px;">Copyright 2021</p>
+      </div>
+
+      <div class="column">
+        <a href="http://www.facebook.com" target="_blank">
+          <img src="images/social/footer_iconFacebook.png" class="footer-img" alt="Facebook Icon" style="padding-left: 20px;"></a>
+        <a href="http://www.twitter.com" target="_blank">
+          <img src="images/social/footer_iconTwitter.png" class="footer-img" alt="Twitter Icon"></a>
+        <a href="http://www.youtube.com" target="_blank">
+          <img src="images/social/footer_iconYouTube.png" class="footer-img" alt="YouTube Icon"></a>
+        <a href="http://www.instagram.com" target="_blank">
+          <img src="images/social/footer_iconInstagram.png" class="footer-img" alt="Instagram Icon"></a>
+      </div>  
+      
+      
+    </div>
+</footer>
+<!-- END: FOOTER -->
+
+
+
+
+</body>
+
+</html>
