@@ -1,4 +1,4 @@
-# Image Carousel Project
+# Electric Car Magazine - Online Presence
 
 ## Overview
 
